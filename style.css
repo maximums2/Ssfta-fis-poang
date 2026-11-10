@@ -1,0 +1,30 @@
+#fis-ssfta-status {
+  position: fixed; z-index: 2147483647; right: 16px; bottom: 16px;
+  max-width: min(560px, calc(100vw - 32px)); padding: 10px 14px;
+  border-radius: 8px; color: #fff; background: #26384a;
+  box-shadow: 0 3px 14px rgba(0,0,0,.25); font: 13px/1.4 Arial,sans-serif;
+}
+#fis-ssfta-status[data-kind="success"] { background: #176b43; }
+#fis-ssfta-status[data-kind="warning"] { background: #8a4b12; }
+.fis-ssfta-heading,.fis-ssfta-cell { background:#fff6d8!important; font-weight:600; }
+.fis-ssfta-cell { text-align:center; }
+.fis-ssfta-cell.fis-ssfta-error { color:#a31515; cursor:help; }
+
+#fis-ssfta-status .fis-ssfta-choices { margin-top:6px; display:flex; gap:6px; }
+#fis-ssfta-status .fis-ssfta-choices button {
+  padding:3px 10px; border:0; border-radius:4px; cursor:pointer;
+  font:600 12px Arial,sans-serif; background:#fff; color:#26384a;
+}
+
+.fis-ssfta-rank { font-weight:700; text-align:center; }
+
+a.fis-ssfta-link { color:inherit; text-decoration:none; border-bottom:1px dotted currentColor; }
+a.fis-ssfta-link:hover { color:#1a5fb4; border-bottom-style:solid; }
+
+/* Varannan rad i en annan färg (följer med vid sortering) */
+.fis-ssfta-table tr:nth-child(odd)  > td { background:#ffffff!important; }
+.fis-ssfta-table tr:nth-child(even) > td { background:#e8eef5!important; }
+.fis-ssfta-table tr:nth-child(odd)  > td.fis-ssfta-cell { background:#fff6d8!important; }
+.fis-ssfta-table tr:nth-child(even) > td.fis-ssfta-cell { background:#f8e9b4!important; }
+.fis-ssfta-table tr:hover > td { background:#d5e3f3!important; }
+.fis-ssfta-table tr:hover > td.fis-ssfta-cell { background:#f2dd96!important; }

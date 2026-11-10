@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "SSF TA – FIS-poäng",
+  "version": "0.11.0",
+  "description": "Hämtar FIS-poäng (SL/GS/SG/DH) från fis-ski.com och visar dem i anmälningslistan på SSF TA.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://ssfta.skidor.com/*",
+    "https://www.fis-ski.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://ssfta.skidor.com/event/*/anmalningar*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "SSF TA – FIS-poäng"
+  }
+}
