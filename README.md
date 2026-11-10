@@ -6,9 +6,8 @@ från fis-ski.com med hjälp av FIS-koderna, och visar dem i kolumnen "FIS xx".
 Installera / uppdatera:
 1. Packa upp ZIP-filen.
 2. Öppna chrome://extensions och aktivera utvecklarläge.
-3. Ta bort den gamla versionen (v0.2) eller klicka "Uppdatera" på den.
-4. Läs in opaketerat -> välj mappen fis_ssfta_extension_v0_11.
-5. Ladda om SSF TA-sidan.
+3. Läs in opaketerat -> välj mappen fis_ssfta_extension_v0_11.
+4. Ladda om SSF TA-sidan.
 
 Noteringar:
 - Svar sparas i 12 timmar (chrome.storage.local) för att inte belasta FIS.
